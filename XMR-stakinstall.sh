@@ -2,7 +2,8 @@
 
 echo lets build xmr stak for CPU mining 
 
-sudo apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev
+sudo apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev -y 
+sudo apt-get install git -y
 git clone https://github.com/fireice-uk/xmr-stak.git
 mkdir xmr-stak/build
 cd xmr-stak/build
