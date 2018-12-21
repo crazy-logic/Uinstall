@@ -10,6 +10,9 @@ cd xmr-stak/build
 cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
 make install
 
+#lets install screen 
+sudo apt-get install screen
+
 cd xmr-stak/build/bin 
 sudo ./xmr-stak
 
