@@ -13,6 +13,7 @@ make install
 #lets install screen 
 sudo apt-get install screen
 
+sudo sysctl -w vm.nr_hugepages=128
 cd xmr-stak/build/bin 
 sudo ./xmr-stak
 
