@@ -1,0 +1,4 @@
+reset the idrac's from the shell 
+racadm racresetcfg 
+
+reset idrac's from the CMC? 
