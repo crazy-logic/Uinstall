@@ -8,7 +8,7 @@ sudo apt-get install build-essential cmake pkg-config libboost-all-dev libssl-de
 
 cd /
 mkdir crypto/loki 
-cd crypro/loki
+cd /crypro/loki
 git clone --recursive https://github.com/loki-project/loki
 mkdir /build
 make 
