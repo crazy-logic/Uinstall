@@ -1,6 +1,6 @@
 #!/bin/bash
 # wget https://raw.githubusercontent.com/crazy-logic/Uinstall/master/XMR-stakinstall.sh
-# sudo chmod XMR-stakinstall.sh
+# sudo chmod +x XMR-stakinstall.sh
 # sudo /.XMR-stakinstall.sh
 
 echo lets build xmr stak for CPU mining 
