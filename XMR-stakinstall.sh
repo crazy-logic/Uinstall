@@ -3,11 +3,18 @@
 # sudo chmod +x XMR-stakinstall.sh
 # sudo ./XMR-stakinstall.sh
 
-echo lets build xmr stak for CPU mining 
+
+#for nvidia - sudo apt install nvidia-cuda-toolkit gcc-6 
+
+echo lets build xmr stak for CPU mining in root/crypto
 
 sudo apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev -y 
 sudo apt-get install git -y
+cd /
+sudo mkdir /crypto
+sudo chmod 777 /crypto
 git clone https://github.com/fireice-uk/xmr-stak.git
+sed 's/2.0/0.0/g' /xmr-stak/xmrstak/donate-level.hpp
 mkdir xmr-stak/build
 cd xmr-stak/build
 cmake .. -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
