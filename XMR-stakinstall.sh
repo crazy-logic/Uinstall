@@ -7,6 +7,15 @@
 #for nvidia - sudo apt install nvidia-cuda-toolkit gcc-6 
 
 echo lets build xmr stak for CPU mining in root/crypto
+echo -n "Do you want to enable CUDA for nVidia (y/n)? "
+read answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then
+    echo Yes
+    echo "installing CUDA"
+    sudo apt install nvidia-cuda-toolkit gcc-6
+else
+    echo No
+fi
 
 sudo apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev -y 
 sudo apt-get install git -y
