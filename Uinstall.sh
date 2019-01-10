@@ -23,3 +23,16 @@ sudo apt update
 sudo ubuntu-drivers autoinstall
 
 sudo apt install nvidia-cuda-toolkit gcc-6
+
+
+#lets install apache with php  and some bits for codiad 
+sudo apt-get install php 
+sudo apt-get install php-zip php-mbstring
+sudo service apache2 restart
+
+#lets remove index.html and clone in codiad 
+cd /var/www/html 
+rm index.html 
+sudo git clone https://github.com/crazy-logic/Codiad /var/www/html/
+sudo touch /var/www/html/config.php
+sudo chown www-data:www-data -R /var/www/html/
